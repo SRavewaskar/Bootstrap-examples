@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Bootstrap Example</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+
+<script>
+	setTimeout('$("#myModal").modal()',5000);
+</script>
+</head>
+
+<body> 
+<div class="container">  
+	<div class="modal fade" id="myModal" role="dialog"> 
+		<div class="modal-dialog modal-lg"> 
+			<div class="modal-content"> 
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal">&times;</button> 
+					<h4 class="modal-title">Become a member today!</h4> 
+				</div> 
+				<div class="modal-body"> 
+					<div class="col-lg-6">
+						<img class="img img-responsive" src="image/subs.jpg" alt="Chania" height="700" width="500">
+					</div>
+					<div class="col-lg-6">
+						<h4>Join OfferUp and save 10% on your first order!<br>Use Code MYFIRST10<br>Happy Shopping!</h4>
+						<form role="form"> 
+							<div class="form-group"> 
+								<label for="email">Name</label> 
+								<input type="type" class="form-control" id="email" placeholder="Enter name">
+							</div> 
+							<div class="form-group"> 
+								<label for="pwd">Email</label> 
+								<input type="email" class="form-control" id="pwd" placeholder="Enter email id"> 
+							</div>
+							<div class="form-group"> 
+								<label for="pwd">Password</label> 
+								<input type="password" class="form-control" id="pwd" placeholder="Enter password"> 
+							</div>							
+							<div class="checkbox"> 
+								<label><input type="checkbox"> Accept terms and conditions</label> 
+							</div> 
+							<button type="submit" class="btn btn-default" style="margin-bottom:20px">Submit</button> 
+						</form>
+					</div> 
+				</div> 
+				<div class="modal-footer"> 
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+
+	<div class="row">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid"> 
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					</button> 
+					<a class="navbar-brand" href="#"><img class="img-responsive" src="image/main.png" alt="Chania" height="30" width="30"></a> 
+				</div> 
+				<div class="collapse navbar-collapse" id="myNavbar"> 
+					<ul class="nav navbar-nav"> 
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="#">Cart</a></li> 
+						<li><a href="#">Wishlist</a></li> 
+						<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a> 
+							<ul class="dropdown-menu"> 
+								<li><a href="#">Profile</a></li> 
+								<li><a href="#">Orders</a></li> 
+								<li><a href="#">Refunds</a></li> 
+							</ul> 
+						</li> 
+						
+					</ul> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</nav>
+	</div>
+	<div class="row jumbotron" style="border:solid 1px black">
+		<h4>Electronics> Mobile Phones</h4>
+	</div>
+	<div class="row" > 
+		<div class="col-lg-9">
+			<div class="row"> 
+				<div class="col-lg-6">
+					<img class="img-responsive img-circle" src="image/op5.jpeg" alt="Chania" >
+				</div>
+				<div class="col-lg-6">
+					<h2>Oneplus 5 (8GB, 128GB) </h2>
+					<h3>Rs. 38,000 (3% off)</h3>
+					<button type="button" class="btn btn-primary">Add to cart</button>
+					<span class="label label-success">Verified product</span>
+				</div>
+			</div>
+			<div class="row" style="margin-top:30px">
+				<h4>Buy together and save upto 10%</h4>
+				<div class="col-lg-4">
+					<img class="img-responsive img-circle" src="image/wc.jpg" alt="Chania" width="150" height="150">
+					<h5>Samsung Wireless Charger</h5>
+					<h5>Rs. 3,100</h5>
+				</div>
+				<div class="col-lg-4">
+					<img class="img-responsive img-circle" src="image/wh.jpg" alt="Chania" width="150" height="150">
+					<h5>Samsung Wireless Earphones</h5>
+					<h5>Rs. 1,900</h5>
+				</div>
+				<div class="col-lg-4">
+					<img class="img-responsive img-circle" src="image/vr.jpg" alt="Chania" width="150" height="150">
+					<h5>Samsung Gear VR</h5>
+					<h5>Rs. 7,500</h5>
+				</div>
+			</div>
+			<div class="row"> 
+				<h3>Additional Details</h3> 
+				<ul class="nav nav-tabs"> 
+					<li class="active"><a data-toggle="tab" href="#home">Specifications</a></li> 
+					<li><a data-toggle="tab" href="#menu1">Description</a></li> 
+					<li><a data-toggle="tab" href="#menu2">Ratings</a></li> 
+					 
+				</ul> 
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active"> 
+						<h3>Specifications</h3> 
+						<h6>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB </h6>
+						<h6>5.8 inch Quad HD+ Display</h6>
+						<h6>12MP Rear Camera | 8MP Front Camera</h6>
+						<h6>3000 mAh Battery</h6>
+						<h6>Exynos 8895 Processor</h6>
+					</div> 
+					<div id="menu1" class="tab-pane fade" style="text-align:justify"> 
+						<h3>Description</h3> 
+						<p>
+						The Samsung Galaxy S8, with its smooth features, is stylish enough to make jaws drop.
+				        But don’t let the pretty face fool you. Underneath the stylish exterior lies a beast, 
+						ready to charge at a moment’s notice. Explore a world of endless possibilities with 
+						the Samsung Galaxy S8. Featuring the innovative Infinity Display, this smartphone offers 
+						a smooth, curved surface without sharp angles. With an array of security features, such 
+						as the Iris Scanner, Face Recognition and a fingerprint sensor, the Galaxy S8 keeps all 
+						your private data safe from unauthorized access. Its 10nm processor, along with 4 GB of 
+						RAM, delivers a power-packed performance. The 8 MP front camera and the 12 MP rear camera 
+						further add to the Galaxy S8’s appeal.</p> 
+						<h3>Stunning Infinity Display</h3>
+						<p>
+						The end-to-end Infinity Display of the Galaxy S8 enables an expanded screen size without 
+						the need for a larger phone. Since there’s no bezel, all you see is pure content on the 
+						14.65 cm (5.8) screen. With an 18.5:9 display ratio, every detail will fit perfectly on 
+						the Quad HD+ screen, making your viewing experience more immersive than ever.</p>
+						
+						<h3>If Looks Could Kill</h3>
+						<p>The screen of this smartphone flows seamlessly over the edges to merge beautifully with the aluminium chassis, 
+						offering the phone a sleek look all around. The smooth, curved surface, sans bumps or angles, helps you easily hold 
+						onto your phone with one hand while you’re on-the-go. The home button is placed on the screen itself, and it stays 
+						inconspicuous until you need it. Also, the rear camera sits flush with the back, offering a smooth profile.
+						</p>
+						
+					</div>
+					<div id="menu2" class="tab-pane fade" style="text-align:justify"> 
+						<h3>Ratings</h3> 
+						<button type="button" class="btn btn-primary">Positive <span class="badge">1307</span></button> 
+						<button type="button" class="btn btn-success">Neutral <span class="badge">398</span></button> 
+						<button type="button" class="btn btn-danger">Negative <span class="badge">55</span></button>
+						<h4>Saurabh Rewaskar 4*</h4>
+						<p>The World's Best & Stylish Smartphone From SAMSUNG.
+						Hats Off To The Entire SAMSUNG Design Team For Making This Beautiful Smartphone.
+						The Design Of Galaxy S8 Is Stylish & Cool.
+						The Rear Camera Quality Is Outstanding, In fact It's Best Ever Smartphone Camera Till Now!
+						Front Camera Of Galaxy S8 Is Lovely, It's A Wonderful Selfie Camera For All The Selfie Lovers.
+						Display Quality Is Fantastic, I Must Say It's The Best Ever Display Used On A Smartphone.
+						Battery Is Strong Enough To Last 18~20 Hours.
+						Flipkart Service Is Super Speedy, The Packaging Was Amazing!!!!</p> 
+						
+						<h4>Rohan Varma 5*</h4>
+						<p>If there is something called as "Love at first sight" this has to be it! 
+						The feeling of holding this awesome piece of creativity is a joy in itself! 
+						And not to forget the blazing fast delivery by Flipkart!
+						Absloutely loving this one!</p> 
+						
+						<h4>Jagjeetsing Chavan 3*</h4>
+						<p>The World's Best & Stylish Smartphone From SAMSUNG.
+						Hats Off To The Entire SAMSUNG Design Team For Making This Beautiful Smartphone.
+						The Design Of Galaxy S8 Is Stylish & Cool.</p> 
+						
+						
+					</div>  
+				</div>
+			</div>
+		</div> 
+		<div class="col-lg-3">
+			<h4>Similar Products</h4>
+			<div class="panel-group"> 
+				<div class="panel panel-default"> 
+					<div class="panel-heading">
+						<img class="img-responsive" src="image/s8p.jpg" alt="Chania" width="150" height="150">
+					</div> 
+					<div class="panel-body">
+						<h5>S8 Plus(Midnight Black, 64GB)</h5><br>Rs. 67,000
+						<button type="button" class="btn btn-primary btn-xs" style="align:right">Add to cart</button>
+					</div>
+				</div>
+				<div class="panel panel-default"> 
+					<div class="panel-heading">
+						<img class="img-responsive" src="image/ip7p.png" alt="Chania" width="150" height="150">
+					</div> 
+					<div class="panel-body">
+						<h5>Apple IPhone 7 Plus(128GB)</h5><br>Rs. 67,000
+						<button type="button" class="btn btn-primary btn-xs"style="border-left:20px">Add to cart</button>
+					</div>
+				</div> 
+				<div class="panel panel-default"> 
+					<div class="panel-heading">
+						<img class="img-responsive" src="image/lg6.png" alt="Chania" width="200" height="200"></div> 
+					<div class="panel-body">
+						<h5>LG G6(6 GB RAM, 64GB)</h5><br>Rs. 47,500
+						<button type="button" class="btn btn-primary btn-xs"style="border-left:40px">Add to cart</button>
+					</div> 
+				</div> 
+			</div>
+		
+		</div> 
+	</div> 
+	<div class="row" style="margin-top:20px;border:solid 1px black">
+		<div class="col-lg-6" >
+			<h4>Additional Links</h4>
+			<h5>Product Terms and  Conditions   <button type="button" class="btn btn-link">Terms</button></h5>
+			<h5>Exchange, Returns and Refunds Policy   <button type="button" class="btn btn-link">Grievances</button></h5>
+			<h5>Privacy Policy   <button type="button" class="btn btn-link">Security</button></h5>
+		</div>
+		<div class="col-lg-6 col-md-6">
+			<h4>Write Feedback</h4>
+			
+			<form role="form"> 
+				<div class="form-group"> 
+					<label for="email">Name</label> 
+					<input type="email" class="form-control" id="email" placeholder="Enter name">
+				</div> 
+				<div class="form-group"> 
+					<label for="pwd">Email</label> 
+					<input type="password" class="form-control" id="pwd" placeholder="Enter email id"> 
+				</div>
+				<div class="form-group"> 
+					<label for="pwd">Message</label> 
+					<input type="password" class="form-control" id="pwd" placeholder="Enter feedback here"> 
+				</div> 				
+				<div class="checkbox"> 
+					<label><input type="checkbox"> Accept terms and conditions</label> 
+				</div> 
+				<button type="submit" class="btn btn-default" style="margin-bottom:20px">Submit</button> 
+			</form>			
+		</div>
+	</div>
+	<div class="row">
+		<nav class="navbar navbar-inverse"> 
+			<div class="container-fluid"> 
+				<div class="navbar-header"> 
+					<a class="navbar-brand" href="#">OfferUp</a> 
+				</div> 
+				<div> 
+					<ul class="nav navbar-nav"> 
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">About Us</a></li> 
+						<li><a href="#">Help</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</nav> 
+	</div>
+	
+	
+</div> 
+</body> 
+</html>

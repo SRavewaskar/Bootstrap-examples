@@ -1,0 +1,87 @@
+<!doctype html> 
+<html ng-app="myModule"> 
+<head> <style>
+body { font-family: Arial; }
+table { border-collapse: collapse; } td { border: 1px solid black; padding: 5px; } th { border: 1px solid black; padding: 5px; text-align: left; }
+</style>
+<script src="js/angular.min.js"></script> 
+<script src="script.js"></script> 
+</head> 
+
+<body> 
+
+<div ng-controller="myController"> 
+	<table> 
+		<thead> 
+			<tr> 
+				<th>First Name</th> 
+				<th>Last Name</th> 
+				<th>Gender</th> 
+				<th>Salary</th>
+			</tr> 
+		</thead> 
+		<tbody> 
+			<tr ng-repeat="employee in employees"> 
+				<td> {{ employee.firstName }} </td> 
+				<td> {{ employee.lastName }} </td> 
+				<td> {{ employee.gender }} </td> 
+				<td> {{ employee.salary }} </td> 
+			</tr> 
+		</tbody> 
+	</table> 
+</div>
+
+
+<div ng-controller="myController1">
+	<ul ng-repeat="country in countries" ng-init="parentIndex = $index"> 
+		<li> {{country.name}} - Index = {{ $index }} 
+			<ul> 
+				<li ng-repeat="city in country.cities"> {{city.name}} - Parent Index = {{ parentIndex }}, Index = {{ $index }} </li> 
+			</ul> 
+		</li> 
+	</ul> 
+</div>
+
+<h3>n-g click example</h3>
+<div ng-controller="myController2"> 
+	<table> 
+		<thead> <tr> <th>Name</th> <th>Likes</th> <th>Dislikes</th> <th>Like/Dislike</th> </tr></thead> 
+		<tbody> <tr ng-repeat="technology in technologies"> 
+			<td> {{ technology.name }} </td> 
+			<td style="text-align:center"> {{ technology.likes }} </td> 
+			<td style="text-align:center"> {{ technology.dislikes }} </td> 
+			
+			<td> 
+				<input type="button" ng-click="incrementLikes(technology)" value="Like" /> 
+				<input type="button" ng-click="incrementDislikes(technology)"value="Dislike" /> 
+			</td> 
+		</tr> 
+		</tbody> 
+	</table> 
+</div>
+
+<h3>Filtering example</h3>
+<div ng-controller="myController3"> 
+Sort By : 
+	<select ng-model="sortColumn"> 
+		<option value="name">Name ASC</option> 
+		<option value="+dateOfBirth">Date of Birth ASC</option> 
+		<option value="+gender">Gender ASC</option> 
+		<option value="-salary">Salary DESC</option> 
+	</select> <br /><br /> 
+	
+	<table>
+		<thead> <tr> <th>Name</th> <th>Date of Birth</th> <th>Gender</th> <th>Salary</th> </tr> </thead> 
+		<tbody> <tr ng-repeat="employee in employees | orderBy:sortColumn"> 
+			<td> {{ employee.name }} </td> 
+			<td> {{ employee.dateOfBirth | date:"dd/MM/yyyy" }} </td> 
+			<td> {{ employee.gender }} </td> 
+			<td> {{ employee.salary }} </td> </tr> 
+		</tbody> 
+	</table> 
+</div>
+
+</body>
+</html>
+
+

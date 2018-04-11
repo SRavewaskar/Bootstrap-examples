@@ -1,0 +1,25 @@
+<!doctype html> 
+<html ng-app="myModule"> 
+<head> 
+<script src="js/angular.min.js"></script> 
+<script src="script.js"></script> 
+</head> 
+
+<body ng-app="myModule"> 
+
+<div ng-controller="myController"> 
+	<div> Country : {{ country.name }} </div> 
+	<div> Capital : {{ country.capital }} </div> 
+	<div> <img ng-src="{{country.flag}}" alt="{{ country.name + ' Flag' }}" style="height:100px; width:200px" /> </div> 
+</div>
+
+<div ng-controller="myController"> 
+	<input type="text" placeholder="Type your message here" ng-model="message" /> <br /><br /> 
+	{{ message }} 
+</div> 
+
+
+
+
+</body>
+</html>
